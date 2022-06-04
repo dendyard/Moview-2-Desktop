@@ -435,7 +435,8 @@ p.sut {
   font-weight: 700;
   font-size: 29px;
   font-family: nunito-bold;
-  line-height: 1;
+  line-height: 1.1;
+  margin-bottom: 14px;
 }
 
 .ket-old h2 {
@@ -458,6 +459,7 @@ p.sut {
     font-weight: 100;
     font-size: 14px;
     margin-block-start: 0.8em;
+    margin-top: 0px;
 }
 
 img.shareico {
@@ -1429,7 +1431,7 @@ border-radius: 10px;
 }
 
 .mb-5 {
-  margin-bottom: 5px;
+  margin-bottom: 11px;
 }
 
 .container.bread {
