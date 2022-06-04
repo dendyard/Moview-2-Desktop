@@ -24,13 +24,15 @@
 </div>
 <div class="col-85 layer">
 <ul class="navigation_list">
-<li class="navigation_item active"><a href="#">Beranda</a></li>
-<li class="navigation_item"><a href="#">Film</a></li>
-<li class="navigation_item"><a href="#">Series</a></li>
-<li class="navigation_item"><a href="#">Dokumenter</a></li>
-<li class="navigation_item"><a href="#">Footage</a></li>
-<li class="navigation_item"><a href="#">Tiket Event </a></li>
-<li class="navigation_item"><a href="#">Film Saya</a></li>
+  <li class="navigation_item active"><a href="#">Beranda</a></li>
+	<li class="navigation_item"><a href="#">Film</a></li>
+	<li class="navigation_item"><a href="#">Komedi</a></li>
+	<li class="navigation_item"><a href="#">Series</a></li>
+	<li class="navigation_item"><a href="#">Dokumenter</a></li>
+	<li class="navigation_item"><a href="#">Anak</a></li>
+	<li class="navigation_item"><a href="#">Live Event</a></li>
+	<li class="navigation_item"><a href="#">Live TV</a></li>
+	<li class="navigation_item"><a href="#">Film Saya</a></li>
 </ul>
 
 <div class="etc"><div class="search"></div> 
@@ -59,7 +61,7 @@ DM
 </div>
 
 </div>
-<div class="shadowtop"></div>
+
 <div class="clear"></div>
 
 </section>
@@ -80,30 +82,31 @@ DM
   <div class="container">
   
   
-  
-  <div class="videoWrapper" id='videocontainer'>
- 
- 
-</div>
+  <div id='fixedon'></div>
+  <div class="videoWrapper" id='videocontainer'></div>
+
 <script>
   var options = {
       accountid: "Mo165qXUUf", // Provided by your account manager
       customid: "moview.id", //OPTIONAL. see table below
       container: "videocontainer",
       autoplay: "wifi",
+      "logo" : {
+        url: "https://assets.moview.id/assets/desktop/images/logomain.png"
+      },
       autopause: false,
       "controls": {
           "color": "#FFFFFF",
           "backgroundcolor": "#00af91",
           "font": "Roboto"
       },
-      sound: "on",
+      sound: "fallback",
       soundindicator: { //every attribute is option, but if this property is there (can be empty),
           //then the default will be used
           "style": "wave",
           "duration": 23,
           "position": "bottom-left",
-          "text": "tap to unmute",
+          "text": "",
           "color": "rgba(255, 255, 255, 0.8)",
           "bgcolor": "rgba(0, 0, 0, 0.74)"
       }
@@ -138,47 +141,36 @@ DM
 	 
 	  <div class="col-70 ">
 	 <div class="desk">
-	<div class="col-80 "> <h1>Paris Van Java</h1> </div>
-	 
-	 <div align="right" class="col-20 sharehl2">
-	 
-	 <div id="myBtnshare" class="btnsharenew2"><img class="shareico" src="assets/images/sharenew.svg" alt="moview-share">
-	
-	</div></div>
-	
-	 	<div class="allagefilm"><span class="agefilm">18+</span> Film • Action •  Barat  •  1 Jam 30 Menit</div> <br/>
+    <h1>Malam Minggu Miko</h1>
+    <div class="allagefilm mb-5">
+      <span class="agefilm">18+</span>
+      Series • Action •  Indonesia  •  1 Jam 30 Menit
+    </div>
+    <h2>
+      Sebuah kecelakaan mobil membuat Paige dalam keadaan koma, dan ketika sadar, ia kehilangan ingatan yang parah. Suaminya, Leo berusaha untuk kembali mendapatkan hati istrinya. Film ini berdasarkan kisah nyata.
+    </h2>
 		
-		 <div class="col-25 "><button id="" class="greenbtn " >Beli Film</button></div>
-	 <div class="col-25 "><a href="#"> <button class="greybtn " ><i class=" fa fa-play-circle-o"></i> Nonton Trailer</button></a></div>
-	  <div class="col-50 "><div class="price-film2">Rp. 50.000,-</div>
-                            <div class="tnc-film2"><i>Syarat &amp; Ketentuan Tiket Moview berlaku</i></div></div>
-	 <div class="clear"></div>
-		
-	 <h2>
-                            Sebuah kecelakaan mobil membuat Paige dalam keadaan koma, dan ketika sadar, ia kehilangan ingatan yang parah. Suaminya, Leo berusaha untuk kembali mendapatkan hati istrinya. Film ini berdasarkan kisah nyata.
-                        </h2>
-						
-						
-						
-					
-						
-						
-						<h3 class="sutdet">Sutradara:</h3> 
-						
-						<p class="sut">Joko Anwar</p>
-						
-						
-						<h3 class="sutdet">Pemeran:</h3> 
-						
-						<p class="sut">Andang</p>
-						
-						<h3 class="sutdet">Produksi:</h3> 
-						
-						<p class="sut">Multivision</p>
-						
-						
-						</div>
-						</div>
+    <div class="shrbttn shineplay" id="nonton">				
+      <img class="shareico plyiconbanner inlinebgbannerplay adjiconbgp" src="assets/images/playplayer.svg" alt="moview-share">
+      <span class="inlinebgbannerplay">Beli Rp. 25.000</span>
+    </div>
+    <div class="shrbttn shineplay" id="nonton">				
+      <img class="shareico plyiconbanner inlinebgbannerplay adjiconbgp" src="assets/images/playplayer.svg" alt="moview-share">
+      <span class="inlinebgbannerplay">Nonton Trailer</span>
+    </div>
+	
+    <div class="shrnew" id="myBtnshare">
+      <img src="assets/images/sharenew.svg" alt="moview-share">
+    </div>
+	 <div class="clear"></div>						
+    <h3 class="sutdet">Sutradara:</h3> 
+    <p class="sut">Joko Anwar</p>
+    <h3 class="sutdet">Pemeran:</h3> 
+    <p class="sut">Andang</p>
+    <h3 class="sutdet">Produksi:</h3> 
+    <p class="sut">Multivision</p>
+		</div>
+		</div>
 						
 						
 						
@@ -208,35 +200,35 @@ DM
     <section class="center slider">
     <div><a href="#"><div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster1.png" width="100%">
-	  <div class="overlayplay4"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay4"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div></a>
 	 <span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
 	</div>
     <div><div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster1.png" width="100%">
-	  <div class="overlayplay4"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay4"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div><span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span></div>
     <div>
 	<div class="buymore"><img class="playico" src="assets/images/buy.svg" alt="buy"></div>
 	<div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster1.png" width="100%">
-	  <div class="overlayplay4"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay4"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div><div align="center" class="eksklusif"><img src="assets/images/Icon_Moview_3.svg" alt="moview icon">&nbsp;<div class="ekspad">Eksklusif</div></div><span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span></div>
     <div><div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster1.png" width="100%">
-	  <div class="overlayplay4"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay4"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div><span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span></div>
     <div><div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster1.png" width="100%">
-	  <div class="overlayplay4"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay4"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div><span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span></div>
     <div><div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster1.png" width="100%">
-	  <div class="overlayplay4"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay4"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div><span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span></div>
 	 <div><div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster1.png" width="100%">
-	  <div class="overlayplay4"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay4"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div><span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span></div>
       
   </section>
@@ -392,15 +384,28 @@ window.onclick = function(event) {
       });
 	  
 	  
-	  
-	  $(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 150) {
-      $("#pure").addClass("freze");
-    } else {
-      $("#pure").removeClass("freze");
-    }
-  });
+    
+
+
+$(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 150) {
+          $("#pure").addClass("freze");
+        } else {
+          $("#pure").removeClass("freze");
+        }
+
+        if ($(document).scrollTop() > 450) {
+          $("#fixedon").css("display","block");
+          $("#videocontainer").addClass("playerfloat");
+        } else {
+          $("#videocontainer").removeClass("playerfloat");
+          $("#fixedon").css("display","none");
+        }
+
+      });
+
+
 });
     
 </script>

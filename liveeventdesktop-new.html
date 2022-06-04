@@ -22,13 +22,15 @@
 </div>
 <div class="col-85 layer">
 <ul class="navigation_list">
-<li class="navigation_item active"><a href="#">Beranda</a></li>
-<li class="navigation_item"><a href="#">Film</a></li>
-<li class="navigation_item"><a href="#">Series</a></li>
-<li class="navigation_item"><a href="#">Dokumenter</a></li>
-<li class="navigation_item"><a href="#">Footage</a></li>
-<li class="navigation_item"><a href="#">Tiket Event </a></li>
-<li class="navigation_item"><a href="#">Film Saya</a></li>
+	<li class="navigation_item "><a href="#">Beranda</a></li>
+	<li class="navigation_item"><a href="#">Film</a></li>
+	<li class="navigation_item"><a href="#">Komedi</a></li>
+	<li class="navigation_item"><a href="#">Series</a></li>
+	<li class="navigation_item"><a href="#">Dokumenter</a></li>
+	<li class="navigation_item"><a href="#">Anak</a></li>
+	<li class="navigation_item active"><a href="#">Live Event</a></li>
+	<li class="navigation_item "><a href="#">Live TV</a></li>
+	<li class="navigation_item"><a href="#">Film Saya</a></li>
 </ul>
 
 <div class="etc"><div class="search"></div> 
@@ -57,7 +59,7 @@ DM
 </div>
 
 </div>
-<div class="shadowtop"></div>
+
 <div class="clear"></div>
 
 </section>
@@ -79,7 +81,8 @@ DM
     <div class="exlive">  
 
 <!--videoplay-->
-<div class="container">
+<div id="fixedonlive"></div>
+<div class="container" id="videocontainer">
     <div class="videoWrapper2">
                     <!-- KGPlayer -->
             <script src="https://scripts.jixie.media/jxvideo.3.1.min.js"></script>
@@ -92,6 +95,8 @@ DM
             
             <script>
                             var video_id = "99853";
+                            
+
                             var watch_duration = "0";
                             var options = {
                                 accountid: "Ko175GEEt6",
@@ -164,7 +169,7 @@ DM
   
     <div class="col-70">
 <div class="desk">
-	<div class="col-80 ">  <h1>Live Rock Geeks Kompas TV</h1> </div>
+	<div class="col-80 ">  <h1 class="ttittlenew">Live Rock Geeks Kompas TV</h1> </div>
 	 
 	 <div align="right" class="col-20 sharehl3">
 	 
@@ -444,7 +449,7 @@ DM
 	
 	<div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster1.png">
-	  <div class="overlayplay"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div>
 	 
 	</a>
@@ -459,7 +464,7 @@ DM
     <div>
 	<div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster2.png">
-	  <div class="overlayplay"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div>
 	<span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
 	</div>
@@ -470,7 +475,7 @@ DM
     <div>
 <div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster3.png">
-	  <div class="overlayplay"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div>
 	<div align="center" class="eksklusif"><img src="assets/images/Icon_Moview_3.svg" alt="moview icon">&nbsp;<div class="ekspad">Eksklusif</div></div>
 	<span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span></div>
@@ -479,26 +484,26 @@ DM
 	<div class="buymore"><img class="playico" src="assets/images/buy.svg" alt="buy"></div>
 	<div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster4.png">
-	  <div class="overlayplay"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div><span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span></div>
     
 	<div>
 	<div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster5.png">
-	  <div class="overlayplay"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div><span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span></div>
 	
    <div>
 	<div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster2.png">
-	  <div class="overlayplay"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div><span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span></div>
 	
 	 <div><a href="#">
 	<div class="buymore"><img class="playico" src="assets/images/buy.svg" alt="buy"></div>
 	<div class="imageplay">
 	 <img class="bordimage" src="assets/images/poster1.png">
-	  <div class="overlayplay"><img  src="assets/images/playbul.svg" alt="play"></div>
+	  <div class="overlayplay"><img  src="assets/images/playplayer.svg" alt="play"></div>
 </div></a>
 	 <span style="color:white; text-align:left;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
 	</div>
@@ -676,13 +681,23 @@ window.onclick = function(event) {
 	  
 	  
 	  $(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 150) {
-      $("#pure").addClass("freze");
-    } else {
-      $("#pure").removeClass("freze");
-    }
-  });
+			$(window).scroll(function() {
+				if ($(document).scrollTop() > 150) {
+				$("#pure").addClass("freze");
+				} else {
+				$("#pure").removeClass("freze");
+				}
+
+				if ($(document).scrollTop() > 450) {
+				$("#fixedonlive").css("display","block");
+				$("#videocontainer").addClass("playerfloat");
+				} else {
+				$("#videocontainer").removeClass("playerfloat");
+				$("#fixedonlive").css("display","none");
+			}
+
+
+			});
 });
     
 </script>

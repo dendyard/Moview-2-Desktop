@@ -16,7 +16,7 @@ html {
   
     z-index: 0;
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 56%;
     height: 0;
 }
 
@@ -24,6 +24,10 @@ html {
     background-color: #262626;
 }
 
+.ttittlenew {
+  font-size: 35px;
+    font-family: 'nunito-bold';
+}
 .cardevent {
     margin: 30px 0px;
     overflow: hidden;
@@ -386,17 +390,33 @@ img.srcico {
 }
 h3.sutdet {
   color: #5e5e5e;
+  font-size: 15px;
 }
 p.sut {
   padding-left: 41px;
 }
 .ketnow h1 {
   padding-top: 28px;
-  letter-spacing: 2px;
-  margin: 0;
-  font-weight: 700;
-  font-size: 45px;
+    letter-spacing: 2px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 35px;
+    font-family: 'nunito-bold';
 }
+
+.icon1513840371, .info1513840371 {
+  position: absolute;
+  top: 13px !important;
+  right: 15px !important;
+  height: 30px !important;
+  width: 130px !important;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
 
 .ml-shr {
   margin-left: 15px !important;
@@ -407,11 +427,20 @@ p.sut {
   -webkit-line-clamp: 3;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  height: 69px;
+  /* height: 69px; */
   font-weight: 100;
   font-size: 16px;
 }
 
+.playerfloat {
+    position: fixed !important;
+    height: 265px !important;
+    bottom: 100px !important;
+    right: 50px !important;
+    z-index: 12 !important;
+    width: 472px !important;
+    padding-bottom: 0 !important;
+}
 
 .ket {
   color: #fff;
@@ -498,7 +527,7 @@ img.shareico {
 }
 
 .shineplay:hover {
-    filter: drop-shadow(2px 5px 25px rgba(27, 217, 184, 0.9));
+    filter: drop-shadow(2px 5px 25px rgba(27, 217, 184, 0.5));
 }
 
 .greenbtn {
@@ -558,9 +587,8 @@ img.shareico {
     border-radius: 100px;
     padding: 10px;
     text-align: center;
-    background-color: rgb(0 0 0 / 64%);
+    /* background-color: rgb(0 0 0 / 64%); */
 }
-
 
 .btnsharenew2 {
     height: 51px;
@@ -570,7 +598,6 @@ img.shareico {
     border-radius: 100px;
     padding: 13px;
     text-align: center;
-    background-color: #333;
 }
 .infoprice {
   padding: 15px;
@@ -1024,6 +1051,16 @@ button.subsnow {
     padding-bottom: 56.25%;
     height: 0;
 }
+
+#fixedon {
+  height: 675px;
+  display: none;
+}
+
+#fixedonlive {
+  height: 520px;
+  display: none;
+}
 .videoWrapper iframe {
   position: absolute;
   top: 0;
@@ -1407,7 +1444,7 @@ border-radius: 10px;
 
  .imageplay:hover .overlayplay3 {
 	 padding-top: 50%;
-	padding-left: 35%;
+	padding-left: 23%;
 	-webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
